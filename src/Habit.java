@@ -6,9 +6,16 @@ public class Habit {
         this.name = name;
         this.streak = 0;
     }
+
+    public Habit(String name, int streak) {
+        this.name = name;
+        this.streak = streak;
+    }
+
     public String getName() {
         return name;
     }
+
     public int getStreak() {
         return streak;
     }
@@ -16,9 +23,11 @@ public class Habit {
     public void incrementStreak() {
         this.streak++;
     }
+
     public void displayHabit() {
         System.out.println("Habit: " + name + " | Current Streak: " + streak + " days");
     }
+
     public String toCsv() {
         return name + "," + streak;
     }
