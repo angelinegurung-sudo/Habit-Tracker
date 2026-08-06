@@ -20,9 +20,9 @@ A very simple habit tracker designed for you to keep your daily habits in check.
 
 1. **Clone the repository:**
 git clone https://github.com/angelinegurung-sudo/Habit-Tracker.git
-cd cd Habit-Tracker
+cd Habit-Tracker
 
-2. **Compile the code:**
+3. **Compile the code:**
 javac -d out src/*.java
 
 4. **Run the app:**
