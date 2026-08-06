@@ -19,5 +19,16 @@ public class Habit {
     public void displayHabit() {
         System.out.println("Habit: " + name + " | Current Streak: " + streak + " days");
     }
+    public String toCsv() {
+        return name + "," + streak;
+    }
+
+    public static Habit fromCsv(String line) {
+        String[] parts = line.split(",");
+        if (parts.length == 2) {
+            return new Habit(parts[0], Integer.parseInt(parts[1].trim()));
+        }
+        return null;
+    }
 }
 

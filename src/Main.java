@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
         public static void main(String[] args) {
-            ArrayList<Habit> habits = new ArrayList<>();
+            List<Habit> habits = HabitStorage.loadHabits();
             Scanner scanner = new Scanner(System.in);
             boolean running = true;
 
